@@ -277,9 +277,7 @@ class TaskManager:
                     # very scuffed: set task name here. TODO: fixme?
                     task_object.config.task = task
             else:
-                print(config)
                 task_object = ConfigurableTask(config=config)
-                print(task_object)
 
             return {task: task_object}
 
